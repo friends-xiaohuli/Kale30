@@ -1,4 +1,6 @@
 
+
+function kale:init
 function kale:player_number/init
 function kale:player_pos/init
 

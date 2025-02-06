@@ -1,0 +1,1 @@
+scoreboard objectives add kale.PlayerN dummy
