@@ -1,10 +1,20 @@
 {
-  "pack": {
-    "pack_format": 48,
-    "supported_formats": {
-      "min_inclusive": 48,
-      "max_inclusive": 61
-    },
-    "description": "Made by Big_Jls、Hikal007、WhiteFox_rua（排名不分先后）"
+	"pack": {
+	  "pack_format": 61,
+	  "supported_formats": {
+		"min_inclusive": 61,
+		"max_inclusive": 61
+	  },
+	  "description": [
+		{
+		  "text": "Parkour auxiliary statistics",
+		  "color": "#FFCCFF"
+		},
+		{
+		  "text": "\nMade by Big_Jls、WhiteFox_rua（排名不分先后）",
+		  "color": "#66CCFF"
+		}
+	  ]
+	}
   }
-}
+  

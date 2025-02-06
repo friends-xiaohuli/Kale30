@@ -1,5 +1,6 @@
 {
 	"values": [
-		"kale:tick"
+		"kale:tick",
+		"global:tick"
 	]
 }

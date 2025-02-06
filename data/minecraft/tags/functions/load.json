@@ -1,5 +1,6 @@
 {
 	"values": [
-		"kal:load"
+		"kal:load",
+		"global:load"
 	]
 }
