@@ -1,12 +1,22 @@
 #取消计划
 schedule clear kale:player_number/main
 schedule clear kale:player_pos/main
+schedule clear kale:player_pos/tick 
 
 
-#init
+
+
+#重载加载重置
+function kale:player_number/reset
+function kale:player_pos/reset
+
+
+#Init
 function kale:init
-function kale:player_number/init
-function kale:player_pos/init
+
+#重复初始化
+# function kale:player_number/init
+# function kale:player_pos/init
 
 # 发布前请注释debug模式
 function kale:debug
