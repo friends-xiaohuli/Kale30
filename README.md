@@ -6,3 +6,5 @@
 kale.XXX 计分板
 kale.PlayerN 玩家编号计分板
 kale.PlayerPosN 玩家位置编号计分板
+
+kale.Start 触发器Trigger 大于1开始游戏
