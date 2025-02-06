@@ -1,5 +1,6 @@
 #取消计划
-schedule clear kale:player_number/playern
+schedule clear kale:player_number/main
+schedule clear kale:player_pos/main
 
 
 #init
