@@ -1,5 +1,6 @@
 scoreboard objectives add kale.PlayerPosN dummy
 scoreboard players set Total.number kale.PlayerPosN 1
+scoreboard players set Current.number kale.PlayerPosN 1
 
 
 #清除标记
