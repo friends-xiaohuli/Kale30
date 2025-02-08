@@ -11,6 +11,8 @@ scoreboard players set kale.time kale.TimeState 0
 scoreboard players set kale.timeS kale.TimeState 0
 scoreboard players set kale.state kale.TimeState -1
 scoreboard players set 20 kale.TimeState 20
+scoreboard players set Total.time kale.TimeState 0
+
 
 
 #清除标记

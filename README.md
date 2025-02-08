@@ -50,7 +50,7 @@ kale.Start 触发器Trigger 大于1开始游戏
 `/scoreboard objectives setdisplay sidebar kale.PlayerN`玩家编号计分板
 
 `/function kale:player_number/main`玩家编号定位（仅限增加）
-v
+
 `/function kale:player_number/reset`重置玩家编号（如果玩家数量有变动，请重置此计分板）
 
 `/scoreboard objectives setdisplay sidebar kale.PlayerPosN`虚拟位置编号计分板
