@@ -1,0 +1,1 @@
+execute if score Current.number kale.PlayerPosN matches 1.. run function kale:player_pos/backtrack/add

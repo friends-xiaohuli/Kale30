@@ -1,0 +1,1 @@
+execute if score kale.state kale.TimeState matches 1 run scoreboard players add kale.time kale.TimeState 1
