@@ -7,6 +7,6 @@
 # `/function kale:player_pos/main`虚拟位置定位
 # `/function kale:player_pos/backtrack/main`回溯到虚拟位置
 
-execute if predicate kale:1pa run scoreboard players add Total.time kale.TimeState 1
-execute if predicate kale:3pa run scoreboard players add Total.time kale.TimeState 2
-execute if predicate kale:5pa run scoreboard players add Total.time kale.TimeState 5
+execute if predicate kale:10pa run scoreboard players add Total.time kale.TimeState 1
+execute if predicate kale:30pa run scoreboard players add Total.time kale.TimeState 3
+execute if predicate kale:50pa run scoreboard players add Total.time kale.TimeState 5

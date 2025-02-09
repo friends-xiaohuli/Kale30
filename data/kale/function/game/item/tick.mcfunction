@@ -1,0 +1,1 @@
+execute if score kale.state kale.Lag matches 1 run execute if predicate kale:10pa run execute as @r at @s run function kale:game/item/main

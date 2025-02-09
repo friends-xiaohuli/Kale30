@@ -8,14 +8,21 @@
 
 # 须知 
 
-**请不要在游玩途中使用`/reload`这会导致玩家绑定的数据被刷新重置**
+**退出重进重载存档数据不重置**
 
 `/trigger kale.Start set 1`输入开始游戏
 
+**推荐使用原版服务端或者spigot端进行游玩，使用服务端游玩需要修改function的权限等级，在server.properties文件中**
 
+`function-permission-level=3`
 
+# 玩法介绍
 
+1.随机回溯：30~120秒内，随机概率回溯到前一个存档点（记录位置和背包装备主副手物品），时间差随机30~120秒
 
+2.随机卡物品：掉落物会随机消失！这一定是网络延迟干的！
+
+3.随机夺舍：主手副手物品会随机被丢弃到上下。
 
 
 #  开发指南 
@@ -26,6 +33,10 @@ kale.XXX 计分板
 kale.PlayerN 玩家编号计分板
 
     Total.number 总玩家数量+1
+
+    Total.number.compare 总玩家数量+1的比较积分项
+
+    Real.time.number 总玩家数量
 
 kale.PlayerPosN 玩家位置编号计分板
 
@@ -45,6 +56,15 @@ kale.TimeState 时间状态
 
 kale.Start 触发器Trigger 大于1开始游戏
 
+kale.GameState 游戏状态 
+
+    kale.state 游戏状态 无值为未运行 值为1为已开始不重载
+
+kale.Lag LAG事件
+
+    kale.state 网络波动了 喵~
+
+
 ## 执行函数
 
 `/scoreboard objectives setdisplay sidebar kale.PlayerN`玩家编号计分板
@@ -63,5 +83,4 @@ kale.Start 触发器Trigger 大于1开始游戏
 
 `/scoreboard objectives setdisplay sidebar kale.TimeState`时间总览计分板
 
-
-
+`/scoreboard player kale.state kale.Lag set 1`玩法开关

@@ -1,0 +1,1 @@
+execute unless score kale.state kale.GameState matches 1 run execute as @a at @s run execute if score @s kale.Start matches 1.. run function kale:game/main

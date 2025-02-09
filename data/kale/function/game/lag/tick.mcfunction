@@ -1,0 +1,1 @@
+execute if score kale.state kale.Lag matches 1 run function kale:game/lag/main

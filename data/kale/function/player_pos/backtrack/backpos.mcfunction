@@ -11,3 +11,5 @@ tellraw @a [{"text": "Y","color": "red"},{"storage": "kale:marker","nbt":"args.y
 tellraw @a [{"text": "Z","color": "red"},{"storage": "kale:marker","nbt":"args.z"}]
 tellraw @a [{"text": "RX","color": "red"},{"storage": "kale:marker","nbt":"args.Rx"}]
 tellraw @a [{"text": "RY","color": "red"},{"storage": "kale:marker","nbt":"args.Ry"}]
+
+tag @s add kale.fhd
