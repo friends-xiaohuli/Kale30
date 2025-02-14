@@ -1,0 +1,21 @@
+[
+    {
+      "function": "minecraft:copy_name",
+      "source": "this"
+    },
+    {
+      "function": "minecraft:copy_components",
+      "source": "block_entity"
+    },
+    {
+      "function": "minecraft:copy_custom_data",
+      "source": "this",
+      "ops": [
+        {
+          "source": "",
+          "target": "Tags",
+          "op": "replace"
+        }
+      ]
+    }
+  ]
