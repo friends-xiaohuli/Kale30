@@ -28,6 +28,7 @@
 #  开发指南 
 
 ## 命名空间
+### 回溯位置功能
 kale.XXX 计分板
 
 kale.PlayerN 玩家编号计分板
@@ -64,8 +65,16 @@ kale.Lag LAG事件
 
     kale.state 网络波动了 喵~
 
+### 回溯背包功能
+kale.chest.minecart1/kale.chest.minecart2/kale.chest.minecart2 所用的矿车实体在0 255 0
+
+kale.barrier 空白占位方块
+
+kale.kale.backup 玩家tag
+
 
 ## 执行函数
+### 回溯位置功能
 
 `/scoreboard objectives setdisplay sidebar kale.PlayerN`玩家编号计分板
 
@@ -84,3 +93,9 @@ kale.Lag LAG事件
 `/scoreboard objectives setdisplay sidebar kale.TimeState`时间总览计分板
 
 `/scoreboard player kale.state kale.Lag set 1`玩法开关
+
+### 回溯背包功能
+
+`/schedule clear backup:tools/30s_countdown`关闭回溯
+`/function backup:tools/30s_countdown` 开启回溯(使用指令关闭回溯后再开启请使用/function backup:main/init开启回溯)
+`/function backup:backup/inventory_store_storage` 30s后立刻回溯
