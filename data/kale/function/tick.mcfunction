@@ -4,3 +4,4 @@ function kale:player_pos/tick
 function kale:game/lag/tick
 function kale:game/item/tick
 function kale:game/tick
+function kale:time/tick

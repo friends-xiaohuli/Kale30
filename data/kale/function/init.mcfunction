@@ -19,8 +19,9 @@ function kale:player_pos/reset
 
 
 
-function kale:game/lag/init
+
 function kale:game/init
+function kale:time/init
 
 
 
