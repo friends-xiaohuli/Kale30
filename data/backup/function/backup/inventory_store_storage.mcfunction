@@ -114,5 +114,9 @@ data modify entity @e[tag=kale.chest.minecart2,limit=1] Items.[13].components se
 # 清除多余屏障
 clear @a[tag=kale.backup] barrier
 
-execute if score kale.state kale.DEBUG matches 1 run tellraw @a[tag = kale.backup] {"text": "已经添加tag,30s后准备回溯"}
+
+
+execute if score kale.state kale.DEBUG matches 1 run tellraw @a [{"text": "已经添加tag,30s后准备回溯:"},{"selector": "@s" ,"color": "aqua"}]
+
+
 schedule function backup:backup/trace_back_backup 31s
