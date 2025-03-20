@@ -75,6 +75,10 @@ kale.barrier 空白占位方块
 
 kale.kale.backup 玩家tag
 
+kale.backup.time 延迟触发 -1禁用 默认1
+
+kale.backup.timeY 存档后触发 -1禁用 默认1
+
 
 ## 执行函数
 
