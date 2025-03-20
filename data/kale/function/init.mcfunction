@@ -26,4 +26,4 @@ function kale:time/init
 
 
 # 发布前请注释debug模式
-function kale:debug
+# function kale:debug
