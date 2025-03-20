@@ -1,3 +1,8 @@
+
+#开启存档后延迟
+scoreboard players set kale.time kale.backup.timeY 1
+scoreboard players set kale.time kale.backup.time -1
+
 # 检查是否有玩家以及有tag了，有就return
 execute if entity @a[tag=kale.backup,limit=1] run return fail
 # 没有就给该玩家添加tag
@@ -114,5 +119,7 @@ data modify entity @e[tag=kale.chest.minecart2,limit=1] Items.[13].components se
 # 清除多余屏障
 clear @a[tag=kale.backup] barrier
 
-execute if score kale.state kale.DEBUG matches 1 run tellraw @a[tag = kale.backup] {"text": "已经添加tag,30s后准备回溯"}
-schedule function backup:backup/trace_back_backup 31s
+execute if score kale.state kale.DEBUG matches 1 run tellraw @a [{"selector": "@a[tag = kale.backup]" ,"color": "aqua"},{"text": " 已为添加tag,准备回溯"}]
+
+
+

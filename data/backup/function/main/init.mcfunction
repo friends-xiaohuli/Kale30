@@ -17,5 +17,12 @@ data modify entity @e[tag=kale.chest.minecart2,limit=1] Items set from entity @e
 # 移除tag
 tag @a remove kale.backup
 
-# 30s
-function backup:tools/30s_countdown
+
+
+#注册 存档延迟 存档后延迟 存档状态
+# scoreboard objectives add kale.backup dummy
+scoreboard objectives add kale.backup.time dummy
+scoreboard objectives add kale.backup.timeY dummy
+# scoreboard players set kale.state kale.backup 0
+scoreboard players set kale.time kale.backup.time 1
+scoreboard players set kale.time kale.backup.timeY -1

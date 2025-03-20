@@ -49,6 +49,13 @@ item replace entity @a[tag=kale.backup] armor.head from entity @e[tag=kale.chest
 # 回溯副手
 item replace entity @a[tag=kale.backup] weapon.offhand from entity @e[tag=kale.chest.minecart2,limit=1] container.13 backup:trace
 
+
+function backup:backup/tellraw
+
+#重置主存档计时
+scoreboard players set kale.time kale.backup.time 1
+scoreboard players set kale.time kale.backup.timeY -1
+
 # 清除多余屏障
 clear @a[tag=kale.backup] barrier
 # 清除tag

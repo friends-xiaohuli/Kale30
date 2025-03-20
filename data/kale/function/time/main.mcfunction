@@ -14,7 +14,7 @@ execute if predicate kale:30pa run scoreboard players add kale.LAGtime kale.Time
 #主回溯
 execute if predicate kale:50pa run scoreboard players add Total.time kale.TimeState 1
 execute if score Total.time kale.TimeState matches 601.. run execute if predicate kale:30pa run scoreboard players add Total.time kale.TimeState 1
-execute if score Total.time kale.TimeState matches 601.. run execute if predicate kale:10pa run scoreboard players add Total.time kale.TimeState 2
+execute if score Total.time kale.TimeState matches 601.. run execute if predicate kale:10pa run scoreboard players add Total.time kale.TimeState 1
 
 
 #lag掉落主手物品
@@ -29,6 +29,6 @@ execute if score kale.LAGtime kale.TimeState matches ..0 run scoreboard players 
 
 #main
 execute if score Total.time kale.TimeState matches 600 run function kale:time/storage
-execute if score Total.time kale.TimeState matches 1000.. run function kale:time/backtrack
+execute if score Total.time kale.TimeState matches 2400.. run function kale:time/backtrack
 
 
